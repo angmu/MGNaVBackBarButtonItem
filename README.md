@@ -1,0 +1,2 @@
+# MGNaVBackBarButtonItem
+统一设置导航控制器的返回按钮，modal和push模式
