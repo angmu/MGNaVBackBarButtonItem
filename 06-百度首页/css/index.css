@@ -1,0 +1,147 @@
+a, address, b, big, blockquote, body, center, cite, code, dd, del, div, dl, dt, em, fieldset, font, form, h1, h2, h3, h4, h5, h6, html, i, iframe, img, ins, label, legend, li, ol, p, pre, small, span, strong, u, ul, var
+{
+    padding: 0;
+    margin: 0;
+
+
+}
+
+body{
+    font-size: 15px;
+    background: url("../images/bg.jpg");
+}
+
+/*头部*/
+#header{
+
+    line-height: 33px;
+    background-color: rgba(0,0,0,0.2);
+    text-align: right;
+    height: 33px;
+
+    margin: 0px 0px 20px 0px;
+}
+
+#header a{
+    margin-right: 10px;
+    font-weight: bolder;
+    color: white;
+
+}
+
+#header a.more-product{
+    color: white;
+    text-decoration: none;
+    font-weight: normal;
+    background-color: #3385ff;
+    /*保持水平居中，垂直居中*/
+    /*padding: 5px 2px;*/
+
+    display: inline-block;
+    width: 80px;
+    height: 28px;
+    text-align: center;
+    line-height: 28px;
+}
+
+
+
+/*主要内容*/
+#content{
+
+    /*background-color: blueviolet;*/
+}
+
+
+#content .logo{
+    /*子标签居中*/
+    text-align: center;
+}
+/*logo*/
+#content .logo img{
+    /*display: ;*/
+    width: 270px;
+    height: 130px;
+}
+
+/*百度输入框*/
+#content .search {
+    width: 500px;
+    height: 33px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-bottom: 50px;
+}
+
+#content .search input{
+    width: 400px;
+    height: 33px;
+
+    padding: 5px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+}
+
+/*点击时*/
+#content .search input:focus {
+    outline: none;
+    border: 1px solid #3385ff;
+}
+
+/*点击一下*/
+#content .search a{
+    color: white;
+    background-color: #3385ff;
+
+    font-weight: normal;
+    text-decoration: none;
+
+    display: inline-block;
+    width: 100px;
+    height: 33px;
+    text-align: center;
+    line-height: 33px;
+
+    float: right;
+}
+
+/**/
+#content .dom{
+
+    /*background-color: red;*/
+    text-align: center;
+}
+#content .dom img{
+
+    width: 150px;
+    margin: 10px 5px;
+}
+
+#content .dom img:hover{
+
+    /*透明度*/
+    opacity: 0.5;
+}
+
+
+/*尾部*/
+#footer{
+
+    margin-top: 50px;
+    text-align: center;
+
+}
+
+#footer p{
+
+    margin-bottom: 10px;
+
+}
+#footer p a {
+    color: blue;
+}
+#footer p.footer-top a{
+    margin-left: 10px;
+}

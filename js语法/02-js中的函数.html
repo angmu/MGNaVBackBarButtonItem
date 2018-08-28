@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>js中的函数</title>
+    <script>
+
+        // 定义函数
+        function sum(num1, num2){
+            return num1 + num2;
+        }
+        // 调用函数
+        var result=sum(100,'dd');
+        console.log(result);
+
+//        alert(result);
+
+        // 内置函数
+        function sum2(){
+            var result=0;
+            for (var i in arguments) {
+                result += arguments[i];
+            }
+            return result;
+        }
+
+        var result2 = sum2(10,20,30,40, 1);
+        console.log(result2);
+
+
+
+
+        // 内置数组
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

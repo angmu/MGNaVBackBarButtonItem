@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <img id="icon" src="images/icon_01.png">
+
+    <p></p>
+    <button>上一张</button>
+    <button>下一张</button>
+
+    <script type="text/javascript">
+        img =document.getElementById('icon');
+        preButton =document.getElementsByTagName('button')[0];
+        nextButton =document.getElementsByTagName('button')[1];
+
+        var currentIndex = 1;
+        var minIndex = currentIndex;
+        var maxIndex = 9;
+        preButton.onclick = function () {
+            if (currentIndex == minIndex) {
+                currentIndex = maxIndex;
+            } else {
+                currentIndex--;
+            }
+            img.src = "images/icon_0"+currentIndex+".png";
+            console.log(img.src);
+        }
+
+        nextButton.onclick = function () {
+            if (currentIndex == maxIndex) {
+                currentIndex = minIndex;
+            } else {
+                currentIndex++;
+            }
+
+            img.src = "images/icon_0"+currentIndex+".png"
+            console.log(img.src);
+        }
+    </script>
+</body>
+</html>

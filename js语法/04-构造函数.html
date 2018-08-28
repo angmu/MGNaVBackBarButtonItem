@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>构造函数产生对象</title>
+
+    <script type="text/javascript">
+        function Dog(name, age, height, friends) {
+            this.name = name;
+            this.age=age;
+            this.height=height;
+            this.friends=friends;
+            
+            this.eat= function (someThing) {
+                console.log(this.name+'---吃'+someThing);
+            }
+            this.run= function(someWhere){
+                console.log(this.name+'---跑'+someWhere)
+            }
+        }
+
+        var dog1= new Dog('wangcai', 12, 1.45, ['xixi', 'hehe']);
+        dog1.eat('骨头');
+
+        var dog2= new Dog('aliang', 1, 1.55);
+        dog2.run('狗屋');
+
+        var age=22;
+        if(age>20){
+            console.log('可以结婚了');
+        }
+        (age>20) && console.log('可以结婚了！！！')
+
+    </script>
+</head>
+
+<body>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>dom常见操作</title>
+    <script type="text/javascript">
+//        document.write('<input type="date">');
+//        document.write('<a href="#">我是一个连接</a>');
+    function changeImg() {
+//        var img = document.getElementById('icon');
+        var img = document.getElementsByClassName('imgIcon')[0];
+
+//        var button = document.getElementsByTagName('button')[0];
+        console.log(button, img);
+
+        img.src = "images/img_02.jpg";
+    }
+
+    </script>
+</head>
+<body>
+
+    <img class="imgIcon" id="icon" src="images/img_01.jpg">
+    <p></p>
+    <button onclick="changeImg()">切换图片</button>
+
+</body>
+</html>

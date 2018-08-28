@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>来回切换图片</title>
+
+
+</head>
+<body>
+    <img class="icon" src="images/img_01.jpg">
+    <p></p>
+    <button id="button">切换图片</button>
+
+    <script type="text/javascript">
+
+        var img = document.getElementsByClassName('icon')[0];
+        var btn = document.getElementById('button');
+
+        btn.onclick = function (){
+            console.log(img.src);
+            // 没有找到返回-1
+            if (img.src.lastIndexOf('images/img_01.jpg')!=-1) {
+                // 切换图片
+                img.src='images/img_02.jpg';
+
+            } else {
+                img.src='images/img_01.jpg';
+            }
+        }
+    </script>
+
+</body>
+</html>

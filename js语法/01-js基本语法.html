@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>js语法</title>
+    <script>
+
+        console.log('我是MT');
+
+        // 变量
+        var  age = 10;
+        var height = 1.78;
+
+        var name = 'jack';
+        var result = true;
+
+        console.log(age, height, name, result);
+        console.log(typeof age, typeof name);
+
+        var arr=[age, height, name, result,['哈哈哈', 'hello']];
+//        输出
+//        for (var i=0; i<arr.length; i++){
+        //            console.log(arr[i]);
+        //        }
+
+        for (var i in arr){
+            console.log(i, arr[i]);
+        }
+
+        var nums = [10,21,43,187,15,2];
+//        var minNum = Math.min(10,21,43,187,15,2);
+        var minNum = Math.min.apply(null, nums);
+        console.log(typeof nums);
+
+        console.log(minNum);
+
+    </script>
+</head>
+<body>
+    <button onclick="alert('还真点啊')">点我</button>
+</body>
+</html>

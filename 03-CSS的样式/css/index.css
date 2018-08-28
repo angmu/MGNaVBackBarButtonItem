@@ -1,0 +1,12 @@
+div{
+
+    color: turquoise;
+    font-size: 35px;
+    border: 5px double blue;
+}
+
+p{
+    background-color: yellowgreen;
+    font-size: 20px;
+    border: 5px dashed red;
+}

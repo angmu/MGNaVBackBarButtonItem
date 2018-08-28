@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>canvas</title>
+</head>
+<body>
+
+    <p style="background-color: yellowgreen">canvas绘制直线</p>
+
+    <canvas id="canvas" style="background-color: black">版本不支持!</canvas>
+
+
+
+    <script type="text/javascript">
+        var canvas= document.getElementById('canvas');
+        // 设置黑板尺寸
+        canvas.width= 500;
+        canvas.height= 350;
+
+        // 拿到上下文
+        var context= canvas.getContext("2d");
+        // 设线条的颜色，宽度
+        context.strokeStyle = 'red';
+        context.lineWidth = 7;
+        // 画直线
+        context.moveTo(100, 100);
+        context.lineTo(300, 300);
+        // 前面设置状态，真正绘制
+        context.stroke();
+
+
+        context.strokeStyle = 'blue';
+        context.lineWidth = 3;
+
+        context.beginPath();
+        context.moveTo(400, 100);
+        context.lineTo(100, 300);
+        context.closePath();
+
+        context.stroke();
+    </script>
+
+
+</body>
+</html>
